@@ -13,7 +13,7 @@ func StartEmitter(cfg Config) {
 
 func emit(e LogEntry, cfg Config) {
 	for {
-		fmt.Printf(`%s  %s  %s : %s`+"\n",
+		fmt.Printf(`%-8s  %s  %s : %s`+"\n",
 			e.Level,
 			time.Now().Format(time.RFC3339),
 			cfg.Service,
