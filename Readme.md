@@ -32,12 +32,27 @@ It supports:
 ```text
 LEVEL  TIME  SERVICE_NAME : MESSAGE
 ```
-#Run container
+---
+
+## Run container
 ```bash
 docker run -d \
   -e LOG_CONFIG="INFO:login success,ERROR:db fail,WARN:memory high" \
   -e LOG_DELAY_MS=1000 \
   -e SERVICE_NAME=auth-service \
-  rushilab/logemitter:1.0
+  rushilab/logemitter:latest
   
 ```
+---
+
+## 🧱 Use Cases
+
+- Testing log ingestion pipelines
+- Simulating production logs
+- Debugging monitoring systems
+- Load testing logging infrastructure
+---
+## 🧠 Notes
+1. Logs are written to stdout (Docker logs)
+2. Suitable for containerized environments
+3. Can be used with log agents (Fluent Bit, Vector, etc.)
