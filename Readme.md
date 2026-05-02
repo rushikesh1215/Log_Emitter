@@ -1,11 +1,11 @@
-# 🚀 Log Generator (Go + Docker)
+#  Log Generator (Go + Docker)
 
 A lightweight (`790 kb`), configurable log generator built in Go.  
 It emits structured logs continuously and is useful for testing log pipelines, monitoring systems, and ingestion services.
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 This service generates logs based on environment configuration.
 
@@ -27,7 +27,7 @@ It supports:
 
 ---
 
-## 🧩 LOG_CONFIG Format
+## 🧩 OUTPUT Format
 
 ```text
 LEVEL  TIME  SERVICE_NAME : MESSAGE
